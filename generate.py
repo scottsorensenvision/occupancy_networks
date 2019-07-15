@@ -2,6 +2,7 @@ import torch
 # import torch.distributions as dist
 import os
 import shutil
+import pdb
 import argparse
 from tqdm import tqdm
 import time
@@ -44,6 +45,8 @@ model = config.get_model(cfg, device=device, dataset=dataset)
 
 checkpoint_io = CheckpointIO(out_dir, model=model)
 checkpoint_io.load(cfg['test']['model_file'])
+
+pdb.set_trace()
 
 # Generator
 generator = config.get_generator(model, cfg, device=device)

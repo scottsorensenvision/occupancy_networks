@@ -1,0 +1,17 @@
+inherit_from: configs/pointcloud/onet_scott.yaml
+training:
+  model_file: out/pointcloud/onet_scott/model.pt
+  out_dir:  out/pointcloud/onet_scott
+  batch_size: 99
+  model_selection_metric: iou
+  model_selection_mode: maximize
+  checkpoint_every: 250
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+generation:
+  batch_size: 100000
+  refine: false
+  n_x: 128
+  n_z: 1

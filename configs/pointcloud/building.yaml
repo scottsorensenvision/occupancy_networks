@@ -1,8 +1,8 @@
 method: onet
 data:
   input_type: pointcloud
-  path: data/buildings
-  pointcloud_n: 900
+  path: /src/external/occupancy_networks/data/buildings
+  pointcloud_n: 999
   pointcloud_noise: 0.005
   points_subsample: 2048 
 model:

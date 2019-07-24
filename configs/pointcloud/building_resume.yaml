@@ -1,7 +1,7 @@
-inherit_from: configs/pointcloud/building.yaml
+inherit_from: /src/external/occupancy_networks/configs/pointcloud/building.yaml
 training:
-  model_file: out/pointcloud/building/model.pt
-  out_dir:  out/pointcloud/building
+  model_file: /src/external/occupancy_networks/out/pointcloud/building/model.pt
+  out_dir:  /src/external/occupancy_networks/out/pointcloud/building
   batch_size: 65
   model_selection_metric: iou
   model_selection_mode: maximize

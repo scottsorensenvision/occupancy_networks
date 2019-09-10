@@ -156,7 +156,7 @@ for it, data in enumerate(tqdm(test_loader)):
         time_dict.update(stats_dict)
 
         # Write output
-        mesh_out_file = os.path.join(mesh_dir, '%s.off' % modelname)
+        mesh_out_file = os.path.join(mesh_dir, '%s.obj' % modelname)
         mesh.export(mesh_out_file)
         out_file_dict['mesh'] = mesh_out_file
 

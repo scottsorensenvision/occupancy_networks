@@ -14,7 +14,7 @@ model:
   c_dim: 512 
   z_dim: 0
 training:
-  out_dir:  out/pointcloud/building2
+  out_dir:  /src/external/occupancy_networks/out/pointcloud/building2
   batch_size: 128
   model_selection_metric: iou
   model_selection_mode: maximize

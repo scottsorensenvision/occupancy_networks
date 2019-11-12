@@ -1,8 +1,8 @@
 inherit_from: /src/external/occupancy_networks/configs/pointcloud/DEM.yaml
 training:
-  model_file: /src/external/occupancy_networks/out/pointcloud/building/model.pt
-  out_dir:  /src/external/occupancy_networks/out/pointcloud/building
-  batch_size: 32
+  model_file: /src/external/occupancy_networks/out/pointcloud/DEM2/model.pt
+  out_dir:  /src/external/occupancy_networks/out/pointcloud/DEM2
+  batch_size: 30
   model_selection_metric: iou
   model_selection_mode: maximize
   checkpoint_every: 250

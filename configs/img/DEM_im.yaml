@@ -1,6 +1,6 @@
 method: onet
 data:
-  path: data/dem_image
+  path: /src/external/occupancy_networks/data/dem_image
   img_folder: imgs
   img_size: 224
   points_subsample: 2048 
@@ -11,7 +11,7 @@ model:
   c_dim: 256
   z_dim: 0
 training:
-  out_dir:  out/img/DEM_im
+  out_dir:  /src/external/occupancy_networks/out/img/DEM_im
   batch_size: 64
   model_selection_metric: iou
   model_selection_mode: maximize

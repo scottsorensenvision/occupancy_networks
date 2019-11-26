@@ -103,6 +103,7 @@ def get_generator(model, cfg, device):
         device (device): pytorch device
     '''
     method = cfg['method']
+    # import pdb; pdb.set_trace()
     generator = method_dict[method].config.get_generator(model, cfg, device)
     return generator
 

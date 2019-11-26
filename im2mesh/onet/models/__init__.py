@@ -91,6 +91,7 @@ class OccupancyNetwork(nn.Module):
         '''
 
         if self.encoder is not None:
+            # import pdb; pdb.set_trace()
             c = self.encoder(inputs)
         else:
             # Return inputs?

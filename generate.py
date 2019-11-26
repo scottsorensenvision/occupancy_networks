@@ -46,7 +46,6 @@ model = config.get_model(cfg, device=device, dataset=dataset)
 checkpoint_io = CheckpointIO(out_dir, model=model)
 checkpoint_io.load(cfg['test']['model_file'])
 
-pdb.set_trace()
 
 # Generator
 generator = config.get_generator(model, cfg, device=device)

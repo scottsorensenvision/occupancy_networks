@@ -74,6 +74,7 @@ class Generator3D(object):
         # Encode inputs
         t0 = time.time()
         with torch.no_grad():
+            # import pdb; pdb.set_trace()
             c = self.model.encode_inputs(inputs)
         stats_dict['time (encode inputs)'] = time.time() - t0
 
